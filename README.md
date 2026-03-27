@@ -1,2 +1,3 @@
-# CDA
-Wipro-Intel hackathon, a gen AI based Carrier Discovery Assistant 
+# Winy
+
+To use GPU in docker for ollama follow these [steps](https://hub.docker.com/r/ollama/ollama)

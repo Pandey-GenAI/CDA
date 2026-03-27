@@ -1,0 +1,28 @@
+services:
+
+  # ── Vector database for semantic job search ────────────────────────────────
+  qdrant:
+    image: qdrant/qdrant
+    container_name: cda-qdrant
+    ports:
+      - "6334:6333"          # Using 6334 externally to avoid conflict with Winy's Qdrant
+    volumes:
+      - cda_qdrant_data:/qdrant/storage
+
+  # ── Career Discovery Assistant – Streamlit app ─────────────────────────────
+  cda:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: cda-app
+    environment:
+      - QDRANT_CLIENT=http://cda-qdrant:6333
+      - QWEN_API_URL=http://wiphack30qx5aw.cloudloka.com:8000/v1/chat/completions
+      - QWEN_MODEL=qwen/Qwen3-8B
+    ports:
+      - "8502:8502"           # Access at http://localhost:8502
+    depends_on:
+      - qdrant
+
+volumes:
+  cda_qdrant_data:
