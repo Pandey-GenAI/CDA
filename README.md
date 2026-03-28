@@ -1,6 +1,7 @@
 # 🎯 Career Discovery Assistant (CDA)
+ powered by Intel- Qwen3-8B LLM Model
 
-**Team Uncharted** · Built with Qwen3-8B + Qdrant Semantic Search + Streamlit
+**Team GenAI-Uncharted** · Built with Qwen3-8B + Qdrant Semantic Search + Streamlit
 
 ---
 
@@ -132,4 +133,4 @@ career profiles, ranking roles, and generating personalised explanations.
 
 ---
 
-*Team Uncharted — exploring new territory in AI-powered career discovery.*
+*Team GenAI-Uncharted — exploring new territory in AI-powered career discovery.*
