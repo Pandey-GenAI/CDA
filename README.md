@@ -1,7 +1,8 @@
 # 🎯 Career Discovery Assistant (CDA)
- powered by Intel- Qwen3-8B LLM Model
+ From **Team GenAI-Uncharted** [*exploring new territory in AI-powered career discovery*]..\
+powered by Intel- **Qwen3-8B** LLM Model
 
-**Team GenAI-Uncharted** · Built with Qwen3-8B + Qdrant Semantic Search + Streamlit
+Built with Qwen3-8B + Qdrant Semantic Search + Streamlit
 
 ---
 
