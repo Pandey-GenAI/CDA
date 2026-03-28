@@ -272,7 +272,7 @@ def show() -> None:
     # ── Sidebar – Profile Form ───────────────────────────────────────────────
     with st.sidebar:
         st.markdown("## 🎯 Career Discovery Assistant")
-        st.markdown("*Team Uncharted*")
+        st.markdown("*Team Gen-AI Uncharted*")
         st.markdown("---")
         st.markdown("### 👤 Your Profile")
 
@@ -355,7 +355,7 @@ def show() -> None:
         unsafe_allow_html=True
     )
     st.markdown(
-        '<div class="subtitle">AI-powered job matching · Qwen3-8B + Qdrant Semantic Search · Team Uncharted</div>',
+        '<div class="subtitle">AI-powered job matching · Qwen3-8B + Qdrant Semantic Search · Team GenAI Uncharted</div>',
         unsafe_allow_html=True,
     )
 

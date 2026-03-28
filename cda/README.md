@@ -48,10 +48,17 @@ User Profile (sidebar)
 # 1. Start Qdrant + CDA app
 cd cda/
 docker-compose up --build -d
+      # if permission denied run with sudo privillage
+      sudo docker compose up --build -d
 
 # 2. Populate the Qdrant jobs collection
 pip install qdrant-client fastembed
 python tools/create_job_embeddings.py
+
+      # if n/w issue than run this 
+      sudo docker run -p 6333:6333 -d qdrant/qdrant
+      # now run 
+      python tools/create_job_embeddings.py
 
 # 3. Open the app
 open http://localhost:8502
