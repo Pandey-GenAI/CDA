@@ -64,7 +64,12 @@ python tools/create_job_embeddings.py
 
 # 3. Open the app
 open http://localhost:8502
+
+
+## if icons does not come up- install 
+sudo apt install fonts-noto-color-emoji
 ```
+
 
 ### Option B — Local development
 
