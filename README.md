@@ -55,8 +55,8 @@ docker-compose up --build -d
 pip install qdrant-client fastembed
 python tools/create_job_embeddings.py
 
-      # if n/w issue than run this 
-      sudo docker run -p 6333:6333 -d qdrant/qdrant
+      # if n/w issue or port issue at 6334 than run vector db at 6333 
+      # sudo docker run -p 6333:6333 -d qdrant/qdrant
       # now run 
       python tools/create_job_embeddings.py
 
