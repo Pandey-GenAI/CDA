@@ -24,7 +24,7 @@ COLLECTION_NAME = "jobs"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(SCRIPT_DIR, "..", "app", "embedding_model.pkl")
 
-client = QdrantClient("http://localhost:6333")
+client = QdrantClient("http://localhost:6334")
 
 COLLECTION_NAME = "jobs"
 
