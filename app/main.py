@@ -355,10 +355,14 @@ def show() -> None:
         unsafe_allow_html=True
     )
     st.markdown(
-        '<div class="subtitle">AI-powered job matching · Qwen3-8B + Qdrant Semantic Search · Team GenAI Uncharted</div>',
+        '<div class="subtitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' \
+        '✨ powered by <b>Intel- Qwen3-8B</b> LLM Model</div>',unsafe_allow_html=True,
+    )
+    st.markdown(
+        '<div class="subtitle">From <b>Team GenAI-Uncharted</b> <i>[exploring new territory in AI-powered career discovery]..</i></div>',
         unsafe_allow_html=True,
     )
-
+    
     if not search_clicked:
         # ── Welcome / Onboarding screen ──────────────────────────────────────
         st.markdown("---")
