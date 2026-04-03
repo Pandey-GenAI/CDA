@@ -276,7 +276,7 @@ def show() -> None:
         st.markdown("---")
         st.markdown("### 👤 Your Profile")
 
-        name = st.text_input("Full Name", placeholder="e.g. Azy Sharma")
+        name = st.text_input("Full Name", placeholder="Enter your name")
         current_role = st.text_input(
             "Current Role", placeholder="e.g. Senior Software Engineer"
         )
@@ -396,7 +396,7 @@ def show() -> None:
         st.info(
             "**How it works:**  Your profile is converted to a semantic query and matched "
             "against a curated job database using Qdrant vector search. "
-            "Qwen3-8B then ranks the top matches and explains exactly why each role fits you — "
+            "**Intel-Qwen3-8B LLM** then ranks the top matches and explains exactly why each role fits you — "
             "referencing your actual skills and career goals."
         )
         return
@@ -435,7 +435,7 @@ def show() -> None:
         return
 
     # ── Step 2: LLM ranking ─────────────────────────────────────────────────
-    with st.spinner(f"🤖 Qwen3-8B is ranking and explaining your top {TOP_K_DISPLAY} matches..."):
+    with st.spinner(f"🤖 Intal Qwen3-8B LLM is ranking and explaining your top {TOP_K_DISPLAY} matches..."):
         try:
             llm_analysis = rank_and_explain(profile, job_results)
         except RuntimeError as e:
@@ -449,7 +449,7 @@ def show() -> None:
         f"Search query: *\"{query[:120]}{'…' if len(query) > 120 else ''}\"*"
     )
     st.markdown(f"Found **{len(job_results)}** semantic matches. "
-                f"Top **{TOP_K_DISPLAY}** ranked and explained by Qwen3-8B below.")
+                f"Top **{TOP_K_DISPLAY}** ranked and explained by Intel-Qwen3-8B LLM below.")
 
     # ── AI Analysis ──────────────────────────────────────────────────────────
     if llm_analysis:
