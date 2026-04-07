@@ -65,6 +65,9 @@ python tools/create_job_embeddings.py
 # 3. Open the app
 open http://localhost:8502
 
+# to see quardant DB dashboard and Job Collection
+http://localhost:6334/dashboard#/collections
+
 
 ## if icons does not come up- install 
 sudo apt install fonts-noto-color-emoji
